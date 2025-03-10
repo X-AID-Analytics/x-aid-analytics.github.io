@@ -1,0 +1,46 @@
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
+
+title: "X-AID Analytics"
+description: "A Jekyll theme for creating a personal website or blog"
+baseurl: ""
+url: "https://x-aid-analytics.github.io"
+lang: en
+direction: ltr
+google_analytics: "UA-123456789-0"
+gh_sponsor: "chrisrhymes"
+gh_repo: "jekyll-theme"
+gh_branch: "main"
+gh_version: "v1.0.0"
+gh_issues: ""
+gh_discussions: ""
+gh_license: "GNU General Public License v3.0"
+remote_theme: chrisrhymes/bulma-clean-theme@v0.14.0
+plugins:
+- github-pages
+force_theme: "dark"
+page_excerpts: true
+comments: false
+fixed_navbar: top
+navbar_sticky: true
+footer_menu: footer_menu
+hide_footer: false
+social_links:
+  - name: Twitter
+    url: https://twitter.com/
+    icon: fab fa-twitter
+  - name: Facebook
+    url: https://facebook.com/
+    icon: fab fa-facebook
+  - name: Instagram
+    url: https://instagram.com/
+    icon: fab fa-instagram
+  - name: LinkedIn
+    url: https://linkedin.com/
+    icon: fab fa-linkedin
+  - name: GitHub
+    url: https://github.com/x-aid-analytics/
+    icon: fab fa-github

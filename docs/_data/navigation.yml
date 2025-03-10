@@ -1,0 +1,13 @@
+#./docs/_data/navigation.yml
+- name: Home
+  link: /
+# - name: About
+#   link: /about/
+# - name: Services
+#   link: /services/
+- name: Projects
+  link: https://github.com/X-AID-Analytics
+- name: Blogs
+  link: /blogs/
+- name: Contact
+  link: /contact/

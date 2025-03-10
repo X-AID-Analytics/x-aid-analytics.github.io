@@ -1,0 +1,12 @@
+- name: Baboyma Kagniniwa
+  nickname: Baboyma
+  image: baboyma.jpg
+  role: Founder
+  bio: "I am a software engineer with a passion for building web applications and solving problems. I am a full-stack developer with experience in JavaScript, React, Node.js, and MongoDB."
+  social_links:
+    - name: LinkedIn
+      url: https://linkedin.com/in/baboyma
+      icon: fab fa-linkedin
+    - name: GitHub
+      url: https://github.com/baboyma
+      icon: fab fa-github
