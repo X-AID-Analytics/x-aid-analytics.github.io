@@ -6,6 +6,7 @@ description: The feeling of being Xed out of AID :)
 image: /assets/img/home.jpg
 ---
 
+<!-- Home: Banner + callout message -->
 <section id="home-banner" class="hero is-halfheight has-bg-img">
     <div class="hero-body">
         <div class="container">
@@ -19,12 +20,16 @@ image: /assets/img/home.jpg
     </div>
 </section>
 
-<section id="home-services" class="hero is-medium is-light">
+<!-- Home: Services -->
+<section id="home-services" class="hero is-medium has-background-info-light">
     <div class="hero-body">
         <div class="container">
+
+            <h2 class="title is-2 mb-6 pb-6 has-text-centered">Core Competencies</h2>
+
             <div class="columns is-multiline is-centered">
                 <div class="column is-4 has-text-centered">
-                    <div class="icon is-large">
+                    <div class="is-large mb-4">
                         <i class="fa-solid fa-chart-line fa-5x"></i>
                     </div>
                     <h2 class="title is-4">Data Analysis</h2>
@@ -32,18 +37,18 @@ image: /assets/img/home.jpg
                 </div>
 
                 <div class="column is-4 has-text-centered">
-                    <div class="icon is-large">
+                    <div class="is-large mb-4">
                         <i class="fa-solid fa-chalkboard-user fa-5x"></i>
                     </div>
-                    <h2 class="title is-4">CB & Trainings</h2>
+                    <h2 class="title is-4">Capacity Building & Trainings</h2>
                     <p>Our training team of data scientists and analysts can help you build capacity.</p>
                 </div>
 
                 <div class="column is-4 has-text-centered">
-                    <div class="icon is-large">
+                    <div class="is-large mb-4">
                         <i class="fa-solid fa-signs-post fa-5x"></i>
                     </div>
-                    <h2 class="title is-4">Data Assessment & Strategy</h2>
+                    <h2 class="title is-4">Data Strategy Consulting</h2>
                     <p>Our team of data professional can help you organise and leverage insights from your data.</p>
                 </div>
             </div>
@@ -51,74 +56,66 @@ image: /assets/img/home.jpg
     </div>
 </section>
 
+<!-- Home - Members Profile -->
 <section id="home-members" class="hero is-medium is-light">
     <div class="hero-body">
         <div class="container">
-            <div class="columns is-multiline is-centered">
-                <div class="column is-3">
-                    <div class="card-content">
-                        <div class="media">
-                            <div class="media-left">
-                                <figure class="image is-48x48">
-                                    <img src="https://bulma.io/assets/images/placeholders/128x128.png" alt="Placeholder image">
-                                </figure>
-                            </div>
-                            <div class="content">
-                                <p class="title is-4">Malik Smith</p>
-                                <p class="subtitle is-6">@msmith</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="column is-3">
-                    <div class="card-content">
-                        <div class="media">
-                            <div class="media-left">
-                                <figure class="image is-48x48">
-                                    <img src="https://bulma.io/assets/images/placeholders/96x96.png" alt="Placeholder image">
-                                </figure>
-                            </div>
-                            <div class="content">
-                                <p class="title is-4">Malik Smith</p>
-                                <p class="subtitle is-6">@msmith</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <h2 class="title is-2 mb-6 pb-6 has-text-centered">Meet the Team</h2>
 
-                <div class="column is-3">
-                    <div class="card-content">
-                        <div class="media">
-                            <div class="media-left">
-                                <figure class="image is-48x48">
-                                    <img src="https://bulma.io/assets/images/placeholders/96x96.png" alt="Placeholder image">
-                                </figure>
-                            </div>
-                            <div class="content">
-                                <p class="title is-4">Malik Smith</p>
-                                <p class="subtitle is-6">@msmith</p>
+            <div class="fixed-grid has-2-cols has-1-cols-mobile">
+                <div class="grid">
+                    {% for member in site.data.members %}
+                    <div class="cell">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <figure class="image is-96x96">
+                                            <!-- <img src="https://bulma.io/assets/images/placeholders/128x128.png" alt="Profile - {{ member.name }}"> -->
+                                            <img src="assets/img/profiles/{{ member.image }}" alt="Profile - {{ member.name }}">
+                                        </figure>
+                                    </div>
+                                    <div class="content">
+                                        <p class="title is-4">{{ member.name }}</p>
+                                        <p class="subtitle">{{ member.role }} at <a href="{{ member.org_link }}" target="_blank">{{ member.org }}</a></p>
+                                        <p class="subtitle is-6">{{ member.bio }}</p>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <p>
+                                        {% for skill in member.skills %}
+                                        <a href="">#{{ skill }}</a>
+                                        {% endfor %}
+                                    </p>
+                                    <p class="subtitle is-6">
+                                        {% for social in member.social_links %}
+                                        <span class="icon-text">
+                                            <span class="icon">
+                                                <i class="{{social.icon}}"></i>
+                                            </span>
+                                            <span><a href="{{ social.url }}" target="_blank">{{ social.name }}</a></span>
+                                        </span>
+                                        {% endfor %}
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="column is-3">
-                    <div class="card-content">
-                        <div class="media">
-                            <div class="media-left">
-                                <figure class="image is-48x48">
-                                    <img src="https://bulma.io/assets/images/placeholders/96x96.png" alt="Placeholder image">
-                                </figure>
-                            </div>
-                            <div class="content">
-                                <p class="title is-4">Malik Smith</p>
-                                <p class="subtitle is-6">@msmith</p>
-                            </div>
-                        </div>
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
+        </div>
+    </div>
+</section>
+
+<!-- Home - Hightlights -->
+<section id="home-highlights" class="hero is-medium has-background-success-light">
+    <div class="hero-body">
+        <div class="container">
+
+            <h2 class="title is-2 mb-6 pb-6 has-text-centered">Key Projects</h2>
+
         </div>
     </div>
 </section>

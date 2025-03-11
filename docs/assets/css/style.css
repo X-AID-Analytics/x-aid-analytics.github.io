@@ -6,7 +6,7 @@
 
 #home-banner,
 .has-bg-img {
-    background-image: url(assets/img/carlos-muza-hpjSkU2UYSU-unsplash.jpg);
+    background-image: url('../img/carlos-muza-hpjSkU2UYSU-unsplash.jpg');
     background-position: center;
     background-size: cover;
 }

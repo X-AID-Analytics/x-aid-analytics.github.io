@@ -1,12 +1,75 @@
-- name: Baboyma Kagniniwa
-  nickname: Baboyma
-  image: baboyma.jpg
-  role: Founder
-  bio: "I am a software engineer with a passion for building web applications and solving problems. I am a full-stack developer with experience in JavaScript, React, Node.js, and MongoDB."
-  social_links:
-    - name: LinkedIn
-      url: https://linkedin.com/in/baboyma
-      icon: fab fa-linkedin
-    - name: GitHub
-      url: https://github.com/baboyma
-      icon: fab fa-github
+-   name: Baboyma Kagniniwa
+    nickname: Baboyma
+    image: user.png
+    role: Data Scientist
+    org: USAID
+    org_link: https://www.usaid.gov
+    bio: "Data enthusiast with a passion for solving complex problems using data science and machine learning techniques."
+    skills: ["Python", "R", "SQL", "Tableau", "PowerBI", "Azure", "AWS"]
+    social_links:
+        -   name: Website
+            url: https://baboyma.github.io
+            icon: fas fa-globe
+        -   name: LinkedIn
+            url: https://www.linkedin.com/in/67a2ab23
+            icon: fab fa-linkedin
+        -   name: Gitbub
+            url: https://github.com/baboyma
+            icon: fab fa-github
+
+-   name: "Member 2"
+    nickname: "M2"
+    image: user1.png
+    role: Member
+    org: X-AID Analytics
+    org_link: https://x-aid-analytics.github.io
+    bio: "Data enthusiast with a passion for data analysis and visualization."
+    skills: ["R", "Tableau"]
+    social_links:
+        -   name: Website
+            url: "#"
+            icon: fas fa-globe
+        -   name: LinkedIn
+            url: "#"
+            icon: fab fa-linkedin
+        -   name: Gitbub
+            url: "#"
+            icon: fab fa-github
+
+-   name: "Member 3"
+    nickname: "M3"
+    image: user1.png
+    role: Member
+    org: X-AID Analytics
+    org_link: https://x-aid-analytics.github.io
+    bio: "Data enthusiast with a passion for data analysis and visualization."
+    skills: ["R", "Tableau"]
+    social_links:
+        -   name: Website
+            url: "#"
+            icon: fas fa-globe
+        -   name: LinkedIn
+            url: "#"
+            icon: fab fa-linkedin
+        -   name: Gitbub
+            url: "#"
+            icon: fab fa-github
+
+-   name: "Member 4"
+    nickname: "M2"
+    image: user1.png
+    role: Member
+    org: X-AID Analytics
+    org_link: https://x-aid-analytics.github.io
+    bio: "Data enthusiast with a passion for data analysis and visualization."
+    skills: ["R", "Tableau"]
+    social_links:
+        -   name: Website
+            url: "#"
+            icon: fas fa-globe
+        -   name: LinkedIn
+            url: "#"
+            icon: fab fa-linkedin
+        -   name: Gitbub
+            url: "#"
+            icon: fab fa-github
