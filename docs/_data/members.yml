@@ -27,7 +27,7 @@
     skills: ["R", "Git", "Adobe CC", "Python", "SQL", "Tableau", "AWS", "Excel"]
     social_links:
         -   name: Website
-            url: "https://achafetz.github.io/"
+            url: "https://achafetz.github.io/about/"
             icon: fas fa-globe
         -   name: LinkedIn
             url: "https://www.linkedin.com/in/aaron-chafetz/"
