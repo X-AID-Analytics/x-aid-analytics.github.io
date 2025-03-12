@@ -40,7 +40,7 @@
     nickname: "Tim"
     image: user1.png
     role: PhD Ag Economist
-    org: X-AID Analytics
+    org: USAID
     org_link: https://x-aid-analytics.github.io
     bio: "Ph.D.-trained agricultural economist/data scientist with 15+ years of experience developing cross-functional analytical solutions, automating workflows in R, and creating executive-ready visualizations. "
     skills: ["R", "Python", "SQL", "Github", "Git", "ChatGPT", "VS Code", "Adobe Illustrator", "Tableau", "Stata", "ArcGIS", "Excel"]
