@@ -13,46 +13,46 @@
         -   name: LinkedIn
             url: https://www.linkedin.com/in/67a2ab23
             icon: fab fa-linkedin
-        -   name: Gitbub
+        -   name: GitHub
             url: https://github.com/baboyma
             icon: fab fa-github
 
--   name: "Member 2"
-    nickname: "M2"
-    image: user1.png
-    role: Member
-    org: X-AID Analytics
-    org_link: https://x-aid-analytics.github.io
-    bio: "Data enthusiast with a passion for data analysis and visualization."
-    skills: ["R", "Tableau"]
+-   name: Aaron Chafetz
+    nickname: Aaron
+    image: aaron.jpg
+    role: Economist
+    org: USAID
+    org_link: https://www.usaid.gov
+    bio: "Strategic data analytics leader with extensive experience in data access, automation, munging, analysis, visualization, and capacity strengthening"
+    skills: ["R", "Git", "Adobe CC", "Python", "SQL", "Tableau", "AWS", "Excel"]
     social_links:
         -   name: Website
-            url: "#"
+            url: "https://achafetz.github.io/about/"
             icon: fas fa-globe
         -   name: LinkedIn
-            url: "#"
+            url: "https://www.linkedin.com/in/aaron-chafetz/"
             icon: fab fa-linkedin
-        -   name: Gitbub
-            url: "#"
+        -   name: GitHub
+            url: "https://github.com/achafetz"
             icon: fab fa-github
 
--   name: "Member 3"
-    nickname: "M3"
-    image: user1.png
-    role: Member
-    org: X-AID Analytics
+-   name: "Tim Essam"
+    nickname: "Tim"
+    image: tim.png
+    role: PhD Ag Economist
+    org: USAID
     org_link: https://x-aid-analytics.github.io
-    bio: "Data enthusiast with a passion for data analysis and visualization."
-    skills: ["R", "Tableau"]
+    bio: "Ph.D.-trained agricultural economist/data scientist with 15+ years of experience developing cross-functional analytical solutions, automating workflows in R, and creating executive-ready visualizations. "
+    skills: ["R", "Python", "SQL", "Github", "Git", "ChatGPT", "VS Code", "Adobe Illustrator", "Tableau", "Stata", "ArcGIS", "Excel"]
     social_links:
         -   name: Website
             url: "#"
             icon: fas fa-globe
         -   name: LinkedIn
-            url: "#"
+            url: "https://www.linkedin.com/in/timessam/"
             icon: fab fa-linkedin
-        -   name: Gitbub
-            url: "#"
+        -   name: GitHub
+            url: "https://github.com/tessam30"
             icon: fab fa-github
 
 -   name: "Member 4"
@@ -70,6 +70,6 @@
         -   name: LinkedIn
             url: "#"
             icon: fab fa-linkedin
-        -   name: Gitbub
+        -   name: GitHub
             url: "#"
             icon: fab fa-github
