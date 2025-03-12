@@ -16,3 +16,7 @@
     background-position: center;
     background-size: cover;
 }
+
+.card-fill-parent {
+    height: 100% !important;
+}
