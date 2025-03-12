@@ -36,23 +36,23 @@
             url: https://github.com/achafetz
             icon: fab fa-github
 
--   name: "Member 3"
-    nickname: "M3"
+-   name: "Tim Essam"
+    nickname: "Tim"
     image: user1.png
-    role: Member
+    role: PhD Ag Economist
     org: X-AID Analytics
     org_link: https://x-aid-analytics.github.io
-    bio: "Data enthusiast with a passion for data analysis and visualization."
-    skills: ["R", "Tableau"]
+    bio: "Ph.D.-trained agricultural economist/data scientist with 15+ years of experience developing cross-functional analytical solutions, automating workflows in R, and creating executive-ready visualizations. "
+    skills: ["R", "Python", "SQL", "Github", "Git", "ChatGPT", "VS Code", "Adobe Illustrator", "Tableau", "Stata", "ArcGIS", "Excel"]
     social_links:
         -   name: Website
             url: "#"
             icon: fas fa-globe
         -   name: LinkedIn
-            url: "#"
+            url: "https://www.linkedin.com/in/timessam/"
             icon: fab fa-linkedin
         -   name: GitHub
-            url: "#"
+            url: "https://github.com/tessam30"
             icon: fab fa-github
 
 -   name: "Member 4"
