@@ -6,7 +6,7 @@
     org: USAID
     org_link: https://www.usaid.gov
     bio: "Data enthusiast with a passion for solving complex problems using data science, machine learning, and artificial intelligence techniques."
-    skills: ["Python", "R", "SQL", "GIS", "ETL", "API", "Tableau", "PowerBI", "Azure", "AWS", "DevOps"]
+    skills: ["Python", "R", "SQL", "GIS", "ETL", "API", "Tableau", "PowerBI", "MicroStrategy", "Azure", "AWS", "DevOps"]
     social_links:
         -   name: Website
             url: https://baboyma.github.io
