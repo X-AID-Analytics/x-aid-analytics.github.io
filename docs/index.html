@@ -14,7 +14,7 @@ image: /assets/img/home.jpg
             <p class="subtitle has-text-white">X-ing out of AID for a new data driven mission ...</p>
 
             <div class="my-4">
-                <a href="/" class="button is-info is large">Explore our work</a>
+                <a href="https://github.com/X-AID-Analytics" target="_blank" class="button is-info is large">Explore our work</a>
             </div>
         </div>
     </div>
@@ -25,7 +25,7 @@ image: /assets/img/home.jpg
     <div class="hero-body">
         <div class="container">
 
-            <h2 class="title is-2 mb-6 pb-6 has-text-centered">Core Competencies</h2>
+            <h2 class="title is-2 mb-6 pb-6 has-text-centered is-uppercase">Core Competencies</h2>
 
             <div class="columns is-multiline is-centered">
                 <div class="column is-4 has-text-centered">
@@ -61,45 +61,67 @@ image: /assets/img/home.jpg
     <div class="hero-body">
         <div class="container">
 
-            <h2 class="title is-2 mb-6 pb-6 has-text-centered">Meet the Team</h2>
+            <h2 class="title is-2 mb-6 pb-6 has-text-centered is-uppercase">Meet the Team</h2>
 
             <div class="fixed-grid has-2-cols has-1-cols-mobile">
                 <div class="grid">
                     {% for member in site.data.members %}
                     <div class="cell">
-                        <div class="card">
-                            <div class="card-content">
+                        <div class="card card-fill-parent">
+                            <!-- <div class="card-image is-left">
+                                <div class="media-left">
+                                    <figure class="image">
+                                        <img src="/assets/img/profiles/{{ member.image }}" alt="Profile - {{ member.name }}">
+                                    </figure>
+                                </div>
+                            </div> -->
+                            <div class="card-content card-fill-parent">
                                 <div class="media">
                                     <div class="media-left">
-                                        <figure class="image is-96x96">
-                                            <!-- <img src="https://bulma.io/assets/images/placeholders/128x128.png" alt="Profile - {{ member.name }}"> -->
-                                            <img src="assets/img/profiles/{{ member.image }}" alt="Profile - {{ member.name }}">
+                                        <figure class="image is-48x48">
+                                            <img src="/assets/img/profiles/{{ member.image }}" alt="Profile - {{ member.name }}">
                                         </figure>
                                     </div>
                                     <div class="content">
-                                        <p class="title is-4">{{ member.name }}</p>
+                                        <p class="title is-4">{{ member.name }}{% if member.suffix != "#" %}, {{ member.suffix }}{% endif %}</p>
                                         <p class="subtitle">{{ member.role }} at <a href="{{ member.org_link }}" target="_blank">{{ member.org }}</a></p>
-                                        <p class="subtitle is-6">{{ member.bio }}</p>
+
                                     </div>
                                 </div>
                                 <div class="content">
+                                    <p class="subtitle is-6">{{ member.bio }}</p>
                                     <p>
                                         {% for skill in member.skills %}
-                                        <a href="">#{{ skill }}</a>
+                                        <!-- <a href="">#{{ skill }}</a> -->
+                                        <span class="tag is-info is-light">{{ skill }}</span>
                                         {% endfor %}
                                     </p>
                                     <p class="subtitle is-6">
                                         {% for social in member.social_links %}
+                                        {% if social.url != "#" %}
                                         <span class="icon-text">
                                             <span class="icon">
                                                 <i class="{{social.icon}}"></i>
                                             </span>
                                             <span><a href="{{ social.url }}" target="_blank">{{ social.name }}</a></span>
                                         </span>
+                                        {% else %}
+                                        <span class="icon-text">
+                                            <span class="icon">
+                                                <i class="{{social.icon}}"></i>
+                                            </span>
+                                            <span>{{ social.name }}</span>
+                                        </span>
+                                        {% endif %}
                                         {% endfor %}
                                     </p>
                                 </div>
                             </div>
+
+                            <footer class="card-footer">
+                                <!-- <span class="tag is-success">#Open4Work$$</span> -->
+                            </footer>
+
                         </div>
                     </div>
                     {% endfor %}
@@ -110,11 +132,50 @@ image: /assets/img/home.jpg
 </section>
 
 <!-- Home - Hightlights -->
+<section id="home-highlights" class="hero is-medium has-background-warning-light">
+    <div class="hero-body">
+        <div class="container">
+
+            <h2 class="title is-2 mb-6 pb-6 has-text-centered is-uppercase">Key Projects</h2>
+
+        </div>
+    </div>
+</section>
+
+<!-- Home - Divider -->
+<section id="home-highlights" class="hero is-medium is-light">
+    <div class="hero-body">
+        <div class="container">
+            <div class="skeleton-lines">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Home - Latest Blogs -->
 <section id="home-highlights" class="hero is-medium has-background-success-light">
     <div class="hero-body">
         <div class="container">
 
-            <h2 class="title is-2 mb-6 pb-6 has-text-centered">Key Projects</h2>
+            <h2 class="title is-2 mb-6 pb-6 has-text-centered is-uppercase">Latest Blog Posts</h2>
+
+        </div>
+    </div>
+</section>
+
+<!-- Home - Sponsors -->
+<section id="home-highlights" class="hero is-medium is-light">
+    <div class="hero-body">
+        <div class="container">
+
+            <h2 class="title is-2 mb-6 pb-6 has-text-centered is-uppercase">Sponsors</h2>
+
+            <div class="notification is-warning mt-4">
+                <p class="is-4"><a href="/contact/">Contact us</a> for sponsorship opportunities</p>
+            </div>
 
         </div>
     </div>

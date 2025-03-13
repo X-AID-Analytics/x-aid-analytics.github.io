@@ -1,11 +1,12 @@
 -   name: Baboyma Kagniniwa
     nickname: Baboyma
-    image: user.png
+    suffix: "GISP"
+    image: bk.jpg
     role: Data Scientist
     org: USAID
     org_link: https://www.usaid.gov
-    bio: "Data enthusiast with a passion for solving complex problems using data science and machine learning techniques."
-    skills: ["Python", "R", "SQL", "Tableau", "PowerBI", "Azure", "AWS"]
+    bio: "Data enthusiast with a passion for solving complex problems using data science, machine learning, and artificial intelligence techniques."
+    skills: ["Python", "R", "SQL", "GIS", "ETL", "API", "Tableau", "PowerBI", "MicroStrategy", "Azure", "AWS", "DevOps"]
     social_links:
         -   name: Website
             url: https://baboyma.github.io
@@ -19,6 +20,7 @@
 
 -   name: Aaron Chafetz
     nickname: Aaron
+    suffix: "#"
     image: aaron.jpg
     role: Economist
     org: USAID
@@ -38,8 +40,9 @@
 
 -   name: "Tim Essam"
     nickname: "Tim"
+    suffix: "PhD"
     image: tim.png
-    role: PhD Ag Economist
+    role: Ag. Economist
     org: USAID
     org_link: https://x-aid-analytics.github.io
     bio: "Ph.D.-trained agricultural economist/data scientist with 15+ years of experience developing cross-functional analytical solutions, automating workflows in R, and creating executive-ready visualizations. "
@@ -57,6 +60,7 @@
 
 -   name: "Member 4"
     nickname: "M2"
+    suffix: "#"
     image: user1.png
     role: Member
     org: X-AID Analytics
