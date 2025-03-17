@@ -23,6 +23,30 @@
     background-size: cover;
 }
 
+.blogs-banner {
+    background-position: center;
+    background-size: cover;
+}
+
 .card-fill-parent {
     height: 100% !important;
+}
+
+.post-card > .card-content {
+    display: flex;
+}
+
+.blog-image {
+    width: auto;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+blockquote {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+    unicode-bidi: isolate;
 }

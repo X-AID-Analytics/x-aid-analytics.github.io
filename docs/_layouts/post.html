@@ -1,30 +1,75 @@
 ---
 layout: default
 ---
-<div class="content">
-    <p>Published: {{ page.date | date: '%b %-d, %Y' }} by {{ page.author }}</p>
 
-    {% if page.series %}
-        {% include series.html %}
-    {% endif %}
+<!-- blog: Banner + Tible -->
+<section class="hero is-light blogs-banner">
+    <div class="hero-body">
+        <div class="container">
 
-    {{ content }}
-</div>
+            <div class="columns is-flex">
+                <div class="column is-6 is-18-tablet is-12-mobile">
+                    <h1 class="title">{{page.title}}</h1>
+                    <p class="is-4">{{ page.summary }}</p>
 
-<div class="tags my-4">
-    {% for tag in page.tags %}
-        {% include tag.html tag=tag %}
-    {% endfor %}
-</div>
+                    <div class="content mt-5">
+                        <div class="tags my-4">
+                            {% for tag in page.tags %}
+                                {% include tag.html tag=tag %}
+                            {% endfor %}
+                        </div>
+                    </div>
 
-{% unless site.hide_share_buttons %}
-    <div class="my-4">
-        {% include share-buttons.html %}
+                    <div class="cell mt-5">
+                        <!-- <div class="card card-fill-parent">
+                            <div class="card-content card-fill-parent"> -->
+                                <div class="media">
+                                    <div class="media-left">
+                                        <figure class="image is-48x48">
+                                            <img class="is-rounded" src="/assets/img/{{ page.author_image }}" alt="Author Picture">
+                                        </figure>
+                                    </div>
+                                    <div class="content">
+                                        <p class="">By {{ page.author }}<br/>Published {{ page.date | date: '%b %-d, %Y' }}</p>
+                                    </div>
+                                </div>
+
+                            <!-- </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="column is-6 is-4-tablet is-0-mobile">
+                    <figure class="image blog-image is-256x256 is-square">
+                        <img src="/assets/img/{{ page.image }}" />
+                    </figure>
+                </div>
+            </div>
+        </div>
     </div>
-{% endunless %}
+</section>
 
-{% if site.disqus.shortname %}
-    <div class="my-4">
-        {% include disqus.html %}
+<!-- blog: content -->
+<section class="hero blogs-content">
+    <div class="hero-body">
+        <div class="container">
+
+            <div class="content">
+                {{ content }}
+            </div>
+
+            {% unless site.hide_share_buttons %}
+                <div class="my-4">
+                    {% include share-buttons.html %}
+                </div>
+            {% endunless %}
+
+            {% if site.disqus.shortname %}
+                <div class="my-4">
+                    {% include disqus.html %}
+                </div>
+            {% endif %}
+                </div>
+            </div>
+        </div>
     </div>
-{% endif %}
+</section>

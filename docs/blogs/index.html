@@ -2,8 +2,6 @@
 layout: default
 title: Blogs
 subtitle: Peer leanings & insights
-description: The feeling of being Xed out of AID :)
-image: /assets/img/home.jpg
 ---
 
 <!-- blogs: Banner + callout message -->
@@ -39,15 +37,46 @@ image: /assets/img/home.jpg
                 </div>
             </div>
             <div class="column is-4">
-                <p class="title is-4">Latest Posts</p>
+                <p class="title is-4">Categories</p>
 
-                <div class="columns is-multiline">
-                    {% for post in site.posts limit: 3 %}
-                        <div class="column is-12">
-                            {% include post-card.html %}
-                        </div>
+                <div class="tags">
+                    {% assign cats = site.categories | sort %}
+                    {% for cat in cats %}
+                        {% assign cat_name = cat | first %}
+                        {% assign cat_posts = cat | last %}
+                        <a href="{{ site.baseurl }}/categories/{{ cat_name | slugify }}" class="tag is-dark is-small">{{ cat_name }} ({{ cat_posts | size }})</a>
                     {% endfor %}
                 </div>
+
+                <p class="title is-4">Tags</p>
+
+                <div class="tags">
+                    {% assign tags = site.tags | sort %}
+                    {% for tag in tags %}
+                        {% assign tag_name = tag | first %}
+                        {% assign tag_posts = tag | last %}
+                        <a href="{{ site.baseurl }}/tags/{{ tag_name | slugify }}" class="tag is-info is-small">{{ tag_name }} ({{ tag_posts | size }})</a>
+                    {% endfor %}
+                </div>
+
+                <p class="title is-4">Latest Posts</p>
+
+                <div class="list">
+                    <div class="list-item">
+                        <div class="list-item-content">
+                            {% for post in site.posts limit: 3 %}
+                                <div class="list-item-title">
+                                    <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                                </div>
+                                <div class="list-item-description">
+                                    By {{ post.author }} on {{ post.date | date: '%b %-d, %Y' }}
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </div>
