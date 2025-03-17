@@ -21,7 +21,7 @@ image: /assets/img/home.jpg
 </section>
 
 <!-- Home: Services -->
-<section id="home-services" class="hero is-medium has-background-info-light">
+<section id="home-services" class="hero is-medium">
     <div class="hero-body">
         <div class="container">
 
@@ -56,8 +56,21 @@ image: /assets/img/home.jpg
     </div>
 </section>
 
+<!-- Home - Divider -->
+<section id="" class="hero home-divider is-medium has-background-info-light">
+    <div class="hero-body">
+        <div class="container">
+            <div class="skeleton-lines">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Home - Members Profile -->
-<section id="home-members" class="hero is-medium is-light">
+<section id="home-members" class="hero is-medium">
     <div class="hero-body">
         <div class="container">
 
@@ -68,24 +81,16 @@ image: /assets/img/home.jpg
                     {% for member in site.data.members %}
                     <div class="cell">
                         <div class="card card-fill-parent">
-                            <!-- <div class="card-image is-left">
-                                <div class="media-left">
-                                    <figure class="image">
-                                        <img src="/assets/img/profiles/{{ member.image }}" alt="Profile - {{ member.name }}">
-                                    </figure>
-                                </div>
-                            </div> -->
                             <div class="card-content card-fill-parent">
                                 <div class="media">
                                     <div class="media-left">
                                         <figure class="image is-48x48">
-                                            <img src="/assets/img/profiles/{{ member.image }}" alt="Profile - {{ member.name }}">
+                                            <img class="is-rounded" src="/assets/img/profiles/{{ member.image }}" alt="Profile - {{ member.name }}">
                                         </figure>
                                     </div>
                                     <div class="content">
                                         <p class="title is-4">{{ member.name }}{% if member.suffix != "#" %}, {{ member.suffix }}{% endif %}</p>
                                         <p class="subtitle">{{ member.role }} at <a href="{{ member.org_link }}" target="_blank">{{ member.org }}</a></p>
-
                                     </div>
                                 </div>
                                 <div class="content">
@@ -131,8 +136,21 @@ image: /assets/img/home.jpg
     </div>
 </section>
 
+<!-- Home - Divider -->
+<section id="" class="hero home-divider is-medium has-background-warning-light">
+    <div class="hero-body">
+        <div class="container">
+            <div class="skeleton-lines">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Home - Hightlights -->
-<section id="home-highlights" class="hero is-medium has-background-warning-light">
+<section id="home-highlights" class="hero is-medium">
     <div class="hero-body">
         <div class="container">
 
@@ -143,7 +161,7 @@ image: /assets/img/home.jpg
 </section>
 
 <!-- Home - Divider -->
-<section id="home-highlights" class="hero is-medium is-light">
+<section class="hero home-divider is-medium has-background-success-light">
     <div class="hero-body">
         <div class="container">
             <div class="skeleton-lines">
@@ -156,18 +174,46 @@ image: /assets/img/home.jpg
 </section>
 
 <!-- Home - Latest Blogs -->
-<section id="home-highlights" class="hero is-medium has-background-success-light">
+<section id="home-blogs" class="hero is-medium">
     <div class="hero-body">
         <div class="container">
 
             <h2 class="title is-2 mb-6 pb-6 has-text-centered is-uppercase">Latest Blog Posts</h2>
 
+            <div class="list">
+                <div class="list-item">
+                    <div class="list-item-content">
+                        {% for post in site.posts limit: 3 %}
+                            <div class="list-item-title">
+                                <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                            </div>
+                            <div class="list-item-description">
+                                By {{ post.author }} on {{ post.date | date: '%b %-d, %Y' }}
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Home - Divider -->
+<section class="hero home-divider is-medium has-background-danger-light">
+    <div class="hero-body">
+        <div class="container">
+            <div class="skeleton-lines">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
     </div>
 </section>
 
 <!-- Home - Sponsors -->
-<section id="home-highlights" class="hero is-medium is-light">
+<section id="home-sponsor" class="hero is-medium">
     <div class="hero-body">
         <div class="container">
 

@@ -50,3 +50,7 @@ blockquote {
     margin-inline-end: 40px;
     unicode-bidi: isolate;
 }
+
+.home-divider {
+    /* clip-path: polygon(100% 0, 100% 90%, 90% 100%, 0 100%, 0 10%, 10% 0); */
+}
