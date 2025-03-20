@@ -58,22 +58,22 @@
             url: "https://github.com/tessam30"
             icon: fab fa-github
 
--   name: "Member 4"
-    nickname: "M2"
-    suffix: "#"
-    image: user1.png
-    role: Member
-    org: X-AID Analytics
+-   name: Karishma Srikanth
+    nickname: Karishma
+    suffix: MPP
+    image: karishma.png
+    role: Data Scientist
+    org: USAID
     org_link: https://x-aid-analytics.github.io
-    bio: "Data enthusiast with a passion for data analysis and visualization."
-    skills: ["R", "Tableau"]
+    bio: "Data scientist / monitoring & evaluation specialist with extensive expertise in R-based data analytics and visualization, data processing optimization, and program monitoring—leveraging data and evidence to improve health outcomes"
+    skills: ["R", "Tableau", "SQL", "Git", "Github", "Python", "Adobe CC", "Stata", "GIS", "Excel"]
     social_links:
         -   name: Website
-            url: "#"
+            url: "https://karishma.io/"
             icon: fas fa-globe
         -   name: LinkedIn
-            url: "#"
+            url: "https://www.linkedin.com/in/karishma-srikanth/"
             icon: fab fa-linkedin
         -   name: GitHub
-            url: "#"
+            url: "https://github.com/karishmas26"
             icon: fab fa-github
